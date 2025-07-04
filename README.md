@@ -66,28 +66,31 @@ Here are typical serial settings and parameters (as used in the Hackster.io guid
 **Note:** If you use different servos or change the setup, adjust minimum and maximum pulse values in the Pico firmware.
 
 ---
-
 ## Getting Started
 
-1. **Install dependencies**  
-   - Qt5 and CMAKE chain (for hailocmdbox)
-   - hailo-rpi5-examples (for madsen.py) https://github.com/hailo-ai/hailo-rpi5-examples
-   - madsen.py has to bee in hailo-rpi5-examples/basic_pipelines
-   - Required libraries for Pico firmware (see [Hackster project](https://www.hackster.io/kim-madsen/hailo-rpi5-and-pico-as-io-f80990) for details)
+1. **Install Dependencies**
+   - Install Qt5 and CMake (needed to build and run `hailocmdbox`).
+   - Clone and set up the [hailo-rpi5-examples](https://github.com/hailo-ai/hailo-rpi5-examples) repository.  
+     - Place `madsen.py` inside the `hailo-rpi5-examples/basic_pipelines` directory.
+   - For the Pico firmware, make sure you have the required libraries installed.  
+     - See the [Hackster project guide](https://www.hackster.io/kim-madsen/hailo-rpi5-and-pico-as-io-f80990) for details on library setup.
 
-2. **Flash the Pico**  
-   - Upload the provided firmware to the Pico.
-   - Connect Pico to Pi 5 via USB.
+2. **Flash the Raspberry Pi Pico**
+   - Upload the provided firmware to your Raspberry Pi Pico using your preferred method (e.g., drag-and-drop UF2, Thonny, etc.).
+   - Connect the Pico to your Raspberry Pi 5 via USB.
 
-3. **Connect Pan-Tilt HAT**  
-   - Attach Pan-Tilt HAT to the Pico and connect servos.
+3. **Connect the Pan-Tilt HAT**
+   - Attach the Pimoroni Pan-Tilt HAT to the Pico.
+   - Connect the pan and tilt servos to the HAT according to the manufacturer's instructions.
 
-4. **Run madsen.py and hailocmdbox**  
-   - Start `madsen.py` to parse Hailo AI output.
-   - Launch `hailocmdbox` Qt application.
+4. **Run the Software**
+   - Start `madsen.py` on your Raspberry Pi 5 to process object detection output from the Hailo AI pipeline.
+   - Launch the `hailocmdbox` Qt application.
 
-5. **Configure settings**  
-   - Set the serial port and label-to-track in the Qt app's settings if required.
+5. **Configure Application Settings**
+   - In the Qt application's settings, select the correct serial port for your Pico (e.g., `/dev/ttyACM0`).
+   - Set the object label you want the system to track (default is `"person"`).
+   - Adjust any other settings as needed for your environment.
 
 ---
 
