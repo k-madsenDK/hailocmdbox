@@ -71,7 +71,8 @@ Here are typical serial settings and parameters (as used in the Hackster.io guid
 
 1. **Install dependencies**  
    - Qt (for hailocmdbox)
-   - Python 3 (for madsen.py)
+   - hailo-rpi5-examples (for madsen.py) https://github.com/hailo-ai/hailo-rpi5-examples
+   - madsen.py has to bee in hailo-rpi5-examples/basic_pipelines
    - Required libraries for Pico firmware (see [Hackster project](https://www.hackster.io/kim-madsen/hailo-rpi5-and-pico-as-io-f80990) for details)
 
 2. **Flash the Pico**  
