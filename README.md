@@ -84,8 +84,9 @@ Here are typical serial settings and parameters (as used in the Hackster.io guid
    - Connect the pan and tilt servos to the HAT according to the manufacturer's instructions.
 
 4. **Run the Software**
-   - Start `madsen.py` on your Raspberry Pi 5 to process object detection output from the Hailo AI pipeline.
-   - Launch the `hailocmdbox` Qt application.
+   - put starthailo.sh in hailo-rpi5-examples
+   - ./starthailo.sh
+   - to stop the chain shutdown Hailo Detection App
 
 5. **Configure Application Settings**
    - In the Qt application's settings, select the correct serial port for your Pico (e.g., `/dev/ttyACM0`).
