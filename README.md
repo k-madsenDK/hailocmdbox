@@ -6,4 +6,4 @@ The program is to be used with with a rpi5 hailo+ hat and a Pimoroni Pan-Tilt HA
 In default mode the program will auto track "label" with the higest confidence score.
 
 Default Label name is "person"
-![Screenshot]([qtboxscreendump.png])
+![Screenshot](qtboxscreendump.png)
