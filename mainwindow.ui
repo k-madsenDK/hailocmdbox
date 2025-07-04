@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>550</y>
+      <width>1121</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1121</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1120</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuAutotrack">
+    <property name="title">
+     <string>Autotrack</string>
+    </property>
+    <addaction name="actionAutotrack_on"/>
+    <addaction name="actionAutotrack_off"/>
+   </widget>
+   <widget class="QMenu" name="menuHailo_Text">
+    <property name="title">
+     <string>Hailo Text</string>
+    </property>
+    <addaction name="actionshow_text"/>
+    <addaction name="actionHide_text"/>
+   </widget>
+   <widget class="QMenu" name="menuCamera_Manuel">
+    <property name="title">
+     <string>Camera Manuel</string>
+    </property>
+    <addaction name="actionHorsontal"/>
+    <addaction name="actionVertical"/>
+    <addaction name="actionboth"/>
+   </widget>
+   <widget class="QMenu" name="menuReset_pico">
+    <property name="title">
+     <string>Pico</string>
+    </property>
+    <addaction name="actionReset"/>
+   </widget>
+   <widget class="QMenu" name="menuTrack">
+    <property name="title">
+     <string>Track</string>
+    </property>
+    <addaction name="actionShift_search_label"/>
+   </widget>
+   <addaction name="menuAutotrack"/>
+   <addaction name="menuHailo_Text"/>
+   <addaction name="menuCamera_Manuel"/>
+   <addaction name="menuReset_pico"/>
+   <addaction name="menuTrack"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAutotrack_on">
+   <property name="text">
+    <string>Autotrack on</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAutotrack_off">
+   <property name="text">
+    <string>Autotrack off</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionshow_text">
+   <property name="text">
+    <string>Show text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionHide_text">
+   <property name="text">
+    <string>Hide text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionHorsontal">
+   <property name="text">
+    <string>Horisontal</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionVertical">
+   <property name="text">
+    <string>Vertikal</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionboth">
+   <property name="text">
+    <string>Both</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionShift_search_label">
+   <property name="text">
+    <string>Shift search label</string>
+   </property>
+   <property name="toolTip">
+    <string>Shift search label</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
