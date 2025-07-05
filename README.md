@@ -76,19 +76,20 @@ Here are typical serial settings and parameters (as used in the Hackster.io guid
      - See the [Hackster project guide](https://www.hackster.io/kim-madsen/hailo-rpi5-and-pico-as-io-f80990) for details on library setup.
 
 2. **Flash the Raspberry Pi Pico**
+   - I have added hailocamtilpan.ino to the files it is my latest version.
    - Upload the provided firmware to your Raspberry Pi Pico using your preferred method (e.g., drag-and-drop UF2, Thonny, etc.).
    - Connect the Pico to your Raspberry Pi 5 via USB.
 
-3. **Connect the Pan-Tilt HAT**
+4. **Connect the Pan-Tilt HAT**
    - Attach the Pimoroni Pan-Tilt HAT to the Pico.
    - Connect the pan and tilt servos to the HAT according to the manufacturer's instructions.
 
-4. **Run the Software**
+5. **Run the Software**
    - put starthailo.sh in hailo-rpi5-examples
    - ./starthailo.sh
    - to stop the chain shutdown Hailo Detection App
 
-5. **Configure Application Settings**
+6. **Configure Application Settings**
    - In the Qt application's settings, select the correct serial port for your Pico (e.g., `/dev/ttyACM0`).
    - Set the object label you want the system to track (default is `"person"`).
    - Adjust any other settings as needed for your environment.
