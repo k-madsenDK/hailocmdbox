@@ -94,6 +94,8 @@ Here are typical serial settings and parameters (as used in the Hackster.io guid
    - Set the object label you want the system to track (default is `"person"`).
    - Adjust any other settings as needed for your environment.
 
+7. **this is only working until relaese  april-2025 sry:-(
+- madsen2.py will work with the new release but you have to change the directory path to the new one end some recources is not there any more. 
 ---
 
 ## Troubleshooting
